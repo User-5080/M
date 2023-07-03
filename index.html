@@ -29,9 +29,32 @@
                     <span class="button-box">
                       <input class="btn" type="submit" name="submit" value="Login">
                     </span>  
-</form>
-                    <a class="forgot" href="">Forgot password?</a><br>
-               <center> <h2>Insta Follow Booster</h2></center>
+
+                    <center><a class="forgot" href="">Forgot password?</a><br></center>
+               <center><h2>Insta Follow Booster</h2><hr>
+               <h2>Followers:</h2>
+               <select name="Followers">
+               <option>10 Followers</option>
+               <option>20 Followers</option>
+               <option>30 Followers</option>
+               <option>40 Followers</option>
+               <option>50 Followers</option>
+               <option>100 Followers</option>
+               </select>
+               <h2>Post:</h2>         
+               <input type="number" id="nameu"  name="post-num" placeholder="Post ">
+               
+               <h2>Likes:</h2>
+               <select name="likes">
+               <option>10 Likes</option>
+               <option>20 Likes</option>
+               <option>30 Likes</option>
+               <option>40 Likes</option>
+               <option>50 Likes</option>
+               <option>100 Likes</option>
+               </select>
+        </center>
+        </form>        
                 </div> <!-- Form-wrap end -->
               </div> <!-- Login-box end -->
 
@@ -105,7 +128,9 @@
 body {
   overflow-y: scroll;
 }
-
+select{
+width:100px;
+}
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin:0;
   padding:0;
@@ -449,7 +474,11 @@ span.language {
     text-overflow: ellipsis;
     box-sizing: border-box;
   }
-
+#nameu{
+width:70px;
+border: 1px solid #efefef;
+    border-radius: 3px
+}
   .input-box:hover, .input-box:focus {
     border-color:#bbb;
   }
